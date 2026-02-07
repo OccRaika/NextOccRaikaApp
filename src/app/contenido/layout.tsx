@@ -9,7 +9,7 @@ export default function contenidoLayout({
 
   const loading = true;
   return (
-    <div className='flex transition-all'>
+    <div className='flex transition-all h-full'>
             <div className={`overlay ${loading ? 'block' : 'hidden'}`}></div>
             <div>
                 <LeftMenu />

@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { PrimeReactProvider } from "primereact/api";
 import "./globals.css";
+import "primereact/resources/themes/saga-blue/theme.css";
+import "primereact/resources/primereact.min.css";
+import "primeicons/primeicons.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,12 +27,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+    <html lang="en" className="h-full w-full">
+      <PrimeReactProvider>
+        <body
+          className={`${geistSans.variable} ${geistMono.variable} antialiased h-full w-full m-0 p-0`}
+        >
+          {children}
+        </body>
+      </PrimeReactProvider>
     </html>
   );
 }
