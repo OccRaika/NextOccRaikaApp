@@ -1,10 +1,7 @@
 
-export default function Contenido() {
-  return (
+import { redirect } from "next/navigation";
 
-    <div>
-      contenido
-    </div>
-  )
+export default function Contenido() {
+  redirect('/Contenido/PerfilInterno')
 }
 

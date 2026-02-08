@@ -3,7 +3,6 @@ import { MenuItemIcon } from "./MenuItemIcon"
 import "../assets/iconos/style.css"
 import { MenuItemCerrarSesion } from "./MenuItemCerrarSesion";
 import { MenuItemIconCerrarSesion } from "./MenuItemIconCerrarSesion";
-import { classNames } from "primereact/utils";
 
 export const menuItems = () => {
 
