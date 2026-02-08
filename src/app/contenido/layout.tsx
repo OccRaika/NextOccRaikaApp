@@ -1,5 +1,5 @@
 import LeftMenu from '@/components/Navigation/LeftMenu';
-import TopNav from '@/components/Navigation/TopNav';
+import { TopMenu } from '@/components/Navigation/TopMenu';
 
 export default function contenidoLayout({
   children,
@@ -15,7 +15,7 @@ export default function contenidoLayout({
                 <LeftMenu />
             </div>
             <div className=' w-full bg-white content-size'>
-                <TopNav />
+                <TopMenu />
                 <div className=' m-8'>
                     <main>{children}</main>
                 </div>
