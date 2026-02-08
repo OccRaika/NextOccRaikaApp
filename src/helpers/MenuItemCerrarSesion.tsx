@@ -19,10 +19,10 @@ export const MenuItemCerrarSesion = ({
 
     return (
         <div className='flex mx-4 my-2'>
-            <div onClick={cerrarSesion} className={`w-full  rounded-lg bg-grayl cursor-pointer`}>
-                <div className='flex items-center gap-2 ext-sm py- pl-3'>
+            <div onClick={cerrarSesion} className={`w-full rounded-lg bg-grayl cursor-pointer`}>
+                <div className='flex items-center gap-2 text-base py-3 pl-3 h-10'>
                     <i className={`${icon}`}></i>
-                    <p>{label}</p>
+                    <p className='truncate'>{label}</p>
                 </div>
             </div>
         </div>

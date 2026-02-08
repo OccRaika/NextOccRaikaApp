@@ -3,6 +3,7 @@ import { MenuItemIcon } from "./MenuItemIcon"
 import "../assets/iconos/style.css"
 import { MenuItemCerrarSesion } from "./MenuItemCerrarSesion";
 import { MenuItemIconCerrarSesion } from "./MenuItemIconCerrarSesion";
+import { classNames } from "primereact/utils";
 
 export const menuItems = () => {
 
@@ -18,7 +19,12 @@ export const menuItems = () => {
             )
         },
         {
-            separator: true
+            template : () => (
+                <MenuItem label = 'Horarios' icon = "icon-ico-textra" path = "Horarios"/>
+            )
+        },
+        {
+            separator: true,
         }
         ,
         {
@@ -37,6 +43,11 @@ export const menuItems = () => {
         {
             template : () => (
                 <MenuItemIcon icon = "icon-ico-reportes" path = "Curriculum"/>
+            )
+        },
+        {
+            template : () => (
+                <MenuItemIcon icon = "icon-ico-textra" path = "Horarios"/>
             )
         },
         
