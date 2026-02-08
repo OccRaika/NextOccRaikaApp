@@ -9,6 +9,11 @@ export const menuItems = () => {
     const leftMenuItems = [
         {
             template : () => (
+                <MenuItem label = 'Horarios' icon = "icon-ico-textra" path = "Horarios"/>
+            )
+        },
+        {
+            template : () => (
                 <MenuItem label = 'Perfil Interno' icon = "icon-ico-basicos" path = "PerfilInterno"/>
             )
         },
@@ -17,11 +22,7 @@ export const menuItems = () => {
                 <MenuItem label = 'Curriculum' icon = "icon-ico-reportes" path = "Curriculum"/>
             )
         },
-        {
-            template : () => (
-                <MenuItem label = 'Horarios' icon = "icon-ico-textra" path = "Horarios"/>
-            )
-        },
+        
         {
             separator: true,
         }
@@ -36,6 +37,10 @@ export const menuItems = () => {
     const leftMenuItemsIcons = [
         {
             template : () => (
+                <MenuItemIcon icon = "icon-ico-textra" path = "Horarios"/>
+            )
+        },{
+            template : () => (
                 <MenuItemIcon icon = "icon-ico-basicos" path = "PerfilInterno"/>
             )
         },
@@ -44,12 +49,6 @@ export const menuItems = () => {
                 <MenuItemIcon icon = "icon-ico-reportes" path = "Curriculum"/>
             )
         },
-        {
-            template : () => (
-                <MenuItemIcon icon = "icon-ico-textra" path = "Horarios"/>
-            )
-        },
-        
         {
             separator: true
         }
