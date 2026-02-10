@@ -1,10 +1,11 @@
+import MenuSmartphone from "./MenuSmartphone"
 
 
 export const TopMenu = () => {
     return (
         <div className="flex justify-between items-center h-16 bg-gray-menus w-full text-white">
-                <div className="w-1/12 pt-1 pl-2">
-
+                <div className="">
+                    <MenuSmartphone></MenuSmartphone>
                 </div>
                 <div className=" text-center">OCC RAIKA</div>
                 <div className="flex min-w-1/12 pr-2">
