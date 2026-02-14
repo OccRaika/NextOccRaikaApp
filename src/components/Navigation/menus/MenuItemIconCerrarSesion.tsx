@@ -1,5 +1,5 @@
+import { useAuthStore } from '@/store/authStore';
 import { Tooltip } from 'primereact/tooltip';
-import { useAuthStore } from '../store/authStore';
 
 interface ItemProps {
     icon?: string

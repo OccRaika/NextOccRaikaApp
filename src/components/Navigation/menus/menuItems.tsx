@@ -1,6 +1,6 @@
 import {MenuItem} from "./MenuItem";
 import { MenuItemIcon } from "./MenuItemIcon"
-import "../assets/iconos/style.css"
+import "../../../assets/iconos/style.css"
 import { MenuItemCerrarSesion } from "./MenuItemCerrarSesion";
 import { MenuItemIconCerrarSesion } from "./MenuItemIconCerrarSesion";
 

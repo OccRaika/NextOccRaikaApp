@@ -1,7 +1,8 @@
 "use client";
 import { Menu } from "primereact/menu";
 import { leftBarStore } from "@/store/leftBarStatus";
-import { menuItems } from "@/helpers/menuItems";
+import { menuItems } from "./menus/menuItems";
+
 
 const LeftMenu = () => {
   const { leftMenuItemsIcons, leftMenuItems } = menuItems();

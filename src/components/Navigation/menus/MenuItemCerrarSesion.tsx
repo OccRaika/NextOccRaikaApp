@@ -1,4 +1,4 @@
-import { useAuthStore } from '../store/authStore';
+
 
 interface ItemProps {
     icon: string,
@@ -11,10 +11,9 @@ export const MenuItemCerrarSesion = ({
     icon = 'pi pi home',
     label = 'Home',
 }: ItemProps) => {
-    const { setJWT } = useAuthStore();
 
     const cerrarSesion = () => {
-        setJWT(null);
+        
     }
 
     return (

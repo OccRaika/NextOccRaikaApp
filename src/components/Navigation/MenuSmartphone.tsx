@@ -1,11 +1,11 @@
 "use client";
 
-import { menuItems } from "@/helpers/menuItems";
 import { motion } from "framer-motion";
 import { Button } from "primereact/button";
 import { Menu } from "primereact/menu";
 import { useRef, useState } from "react";
 import MenuBurgerIcon from "./MenuBurgerIcon";
+import { menuItems } from "./menus/menuItems";
 
 export default function RotatingArrow() {
   const menuLeft = useRef<Menu>(null);
