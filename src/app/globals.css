@@ -61,6 +61,7 @@
   --spacing-10: 40px;
   --spacing-11: 44px;
   --spacing-12: 48px;
+  --spacing-13: 52px;
   --spacing-14: 56px;
   --spacing-16: 64px;
   --spacing-20: 80px;
@@ -74,6 +75,7 @@
   --spacing-52: 208px;
   --spacing-56: 224px;
   --spacing-60: 240px;
+  --spacing-62: 248px;
   --spacing-64: 256px;
   --spacing-72: 288px;
   --spacing-80: 320px;
@@ -210,4 +212,9 @@ body {
 .active {
   @apply font-semibold;
   @apply text-paleta-iconosMenu 
+}
+
+span .p-input-icon{
+  padding-bottom: 10px;
+  top: 38%;
 }

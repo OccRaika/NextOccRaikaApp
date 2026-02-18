@@ -1,4 +1,4 @@
-
+'use client'
 import { Dropdown } from 'primereact/dropdown';
 import { Controller, useFormContext } from "react-hook-form"
 

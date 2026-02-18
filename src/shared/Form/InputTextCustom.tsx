@@ -1,3 +1,4 @@
+'use client'
 import { InputText } from "primereact/inputtext";
 import { Controller, useFormContext } from "react-hook-form"
 
@@ -17,7 +18,7 @@ export const InputTextCustom = ({ name, id, label, className="", disabled=false}
         <div className={`field ${className}`}>
             <span className="p-float-label">
                 <Controller name={name} control={control} render={({ field }) => (
-                    <InputText disabled={disabled} {...field} className={`${errors[id] ? 'p-invalid' : ''}`} />
+                    <InputText disabled={disabled} {...field} className={`${errors[id] ? 'p-invalid' : ''}`}/>
                 )} />
                 <label htmlFor={name} className={`${errors[id] ? 'p-error' : ''}`}>{label}</label>
 

@@ -1,3 +1,4 @@
+'use client'
 import { useForm, FormProvider } from "react-hook-form";
 import { Button } from 'primereact/button';
 import { yupResolver } from '@hookform/resolvers/yup';
@@ -13,7 +14,7 @@ type DefaultType = {
     password: string
 }
 
-export const Login = () => {
+export default function Login() {
 
     const toast = useRef<Toast>(null);
 
@@ -36,19 +37,19 @@ export const Login = () => {
     }
 
     return (
-        <article className="w-full p-2 bg-fondo py-10">
+        <article className="w-ful h-full p-2 bg-fondo py-10">
             <Toast ref={toast} />
             <FormProvider {...methods}>
-                <form onSubmit={handleSubmit(onSubmit)} className="p-fluid space-y-5">
-                    <div className='text-xl mb-14 text-paletaIpn-guinda' >Inicio de Sesión</div>
+                <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col justify-center items-center p-fluid space-y-5">
+                    <div className='text-xl mb-10 text-amber-900' >Inicio de Sesión</div>
                     <div className="flex flex-col justify-center items-center">
-                        <InputTextCustom name='email' id='email' label='Email' className="max-w-72" />
-                        <PasswordCustom name='password' id='password' label='Contraseña' className="max-w-72" />
+                        <InputTextCustom name='email' id='email' label='Email' className="p-inputtext-lg max-w-64" />
+                        <PasswordCustom name='password' id='password' label='Contraseña' className="p-inputtext-lg max-w-64" />
                     </div>
-                    <div className='w-3/4 m-auto max-w-72'>
+                    <div className='w-full m-auto max-w-64'>
                         <Button type="submit" label="Iniciar sesión" className={'mt-2'} outlined />
                     </div>
-                    <section className='w-3/4 m-auto text-sm'>
+                    <section className='flex flex-col m-auto text-sm pt-6'>
                         <div>¿Perdiste tu&nbsp;
                             <a href='/usuario/registrar' className="underline text-blue-500">contraseña</a>
                             ?</div>

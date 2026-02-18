@@ -1,5 +1,7 @@
+'use client'
 import { Password } from "primereact/password";
-import { Controller, useFormContext } from "react-hook-form"
+import { Controller, useFormContext } from "react-hook-form";
+
 
 type InputProps =
     {
@@ -14,10 +16,11 @@ export const PasswordCustom = ({ name, id, label, className="", disabled= false 
     const { control, formState: { errors } } = useFormContext();
 
     return (
-        <div className={`field w-3/4 mx-5 pt-2 ${className}`}>
+        <div className={`field w-full pt-5 ${className}`}>
             <span className="p-float-label">
                 <Controller name={name} control={control} render={({ field }) => (
-                    <Password disabled={disabled} feedback={false} toggleMask {...field} className={`${errors[id] ? 'p-invalid' : ''}`} />
+                    <Password disabled={disabled} feedback={true} toggleMask {...field} className={`${errors[id] ? 'p-invalid' : ''}`} 
+                    promptLabel="Escribe una contraseña" weakLabel="Muy sencilla" mediumLabel="Complejidad media" strongLabel="Contraseña fuerte"/>
                 )} />
                 <label htmlFor={name} className={`${errors[id] ? 'p-error' : ''}`}>{label}</label>
 

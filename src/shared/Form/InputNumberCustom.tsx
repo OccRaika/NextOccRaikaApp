@@ -1,3 +1,4 @@
+'use client'
 import { InputNumber } from 'primereact/inputnumber';
 import { Controller, useFormContext } from "react-hook-form"
 
