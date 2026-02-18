@@ -195,7 +195,6 @@ body {
   width: 100vw;
   margin: 0;
   padding: 0;
-  overflow: hidden; /* opcional: evita scroll en el body */
 }
 
 #__next {

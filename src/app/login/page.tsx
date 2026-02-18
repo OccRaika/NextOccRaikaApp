@@ -37,24 +37,24 @@ export default function Login() {
     }
 
     return (
-        <article className="w-ful h-full p-2 bg-fondo py-10">
+        <article className="w-full h-full p-2 bg-fondo py-10">
             <Toast ref={toast} />
             <FormProvider {...methods}>
                 <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col justify-center items-center p-fluid space-y-5">
-                    <div className='text-xl mb-10 text-amber-900' >Inicio de Sesión</div>
+                    <div className='text-xl mb-5 text-center text-amber-900' >Inicio de Sesión</div>
                     <div className="flex flex-col justify-center items-center">
-                        <InputTextCustom name='email' id='email' label='Email' className="p-inputtext-lg max-w-64" />
-                        <PasswordCustom name='password' id='password' label='Contraseña' className="p-inputtext-lg max-w-64" />
+                        <InputTextCustom name='email' id='email' label='Email' className=" max-w-64 mb-2.5" />
+                        <PasswordCustom name='password' id='password' label='Contraseña' className=" max-w-64" />
                     </div>
-                    <div className='w-full m-auto max-w-64'>
-                        <Button type="submit" label="Iniciar sesión" className={'mt-2'} outlined />
+                    <div className='w-full m-auto' style={{width:"235px"}}>
+                        <Button type="submit" label="Iniciar sesión" outlined />
                     </div>
                     <section className='flex flex-col m-auto text-sm pt-6'>
                         <div>¿Perdiste tu&nbsp;
-                            <a href='/usuario/registrar' className="underline text-blue-500">contraseña</a>
+                            <a href='/usuario/registro' className="underline text-blue-500">contraseña</a>
                             ?</div>
                         <div>¿No tienes cuenta?&nbsp;
-                            <a href='/usuario/registrar' className="underline text-blue-500">Registrate.</a>
+                            <a href='/usuario/registro' className="underline text-blue-500">Registrate.</a>
                         </div>
                     </section>
                 </form>

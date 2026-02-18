@@ -16,7 +16,7 @@ export const PasswordCustom = ({ name, id, label, className="", disabled= false 
     const { control, formState: { errors } } = useFormContext();
 
     return (
-        <div className={`field w-full pt-5 ${className}`}>
+        <div className={`field w-full ${className}`}>
             <span className="p-float-label">
                 <Controller name={name} control={control} render={({ field }) => (
                     <Password disabled={disabled} feedback={true} toggleMask {...field} className={`${errors[id] ? 'p-invalid' : ''}`} 

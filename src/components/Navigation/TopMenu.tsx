@@ -16,7 +16,7 @@ export const TopMenu = () => {
             pathname: "/login",
             query: { name: "test" },
           }}
-          className={`w-full rounded-lg ${true ? "active" : "hover:bg-gray-gray"}`}
+          className={`w-full rounded-lg px-4 hover:bg-gray-gray"}`}
         >Iniciar sesión</Link>
         <i className="pi pi-user p-1" style={{ fontSize: "1rem" }}></i>
       </div>

@@ -15,7 +15,7 @@ export const InputTextCustom = ({ name, id, label, className="", disabled=false}
     const { control, formState: { errors } } = useFormContext();
 
     return (
-        <div className={`field ${className}`}>
+        <div className={`field w-full ${className}`}>
             <span className="p-float-label">
                 <Controller name={name} control={control} render={({ field }) => (
                     <InputText disabled={disabled} {...field} className={`${errors[id] ? 'p-invalid' : ''}`}/>
